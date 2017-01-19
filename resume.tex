@@ -1,0 +1,109 @@
+% LaTeX resume using res.cls
+\documentclass[overlapped,line]{res} 
+\topmargin=-.74in
+\oddsidemargin -.5in
+\evensidemargin -.5in
+\textheight=11in
+\textwidth=6.62in
+\hoffset=.5in
+\sectionwidth=0.5in
+\newsectionwidth{0in}
+\sectionskip=0.1in
+
+\renewcommand{\sectionfont}{\bf}
+
+
+\begin{document}
+
+
+% Center the name over the entire width of resume:
+\moveleft.5\hoffset\centerline{\huge\bf Preston Carpenter}
+ 
+
+\moveleft.5\hoffset\centerline{360 Huntington Ave, Boston, MA 02115 \textbullet \space (417) 438-7110 \textbullet \space carpenter.pr@husky.neu.edu}
+\moveleft.5\hoffset\centerline{ https://www.linkedin.com/in/timidger \textbullet \space https://github.com/Timidger \textbullet \space https://timidger.github.io }
+\moveleft.5\hoffset\centerline{Available: \textbf{July-December 2017}}
+
+\begin{resume}
+
+\section{\underline{EDUCATION}}  \textbf{Northeastern University}, Boston, MA \hfill September 2014 \--- Present \\
+                {\sl Candidate for a Bachelor of Science in Computer Science} \hfill Expected graduation May 2018 \\
+                %Credentials: TA for Fundamentals of Computer Science 1, GPA: 2.9\\
+                % Change these relevant courses as you see fit
+                % Database Design, Algorithms and Data, Computer Systems, Object-Orientated Design, Theory of Computation, Networks ad Distributed Systems
+                Relevant Courses: \hskip 1em Object-Orientated , Computer Systems, Programming Languages, \\
+                \strut\hskip 9.25em Networks and Distributed Systems, Algorithms and Data \vspace{2mm} \\ 
+                \textbf{Thomas Jefferson Independent Day School}, Joplin, Missouri \hfill Graduated May 2014
+\noindent\makebox[6.5in]{\rule{6.5in}{0.4pt}}
+
+\section {\underline{COMPUTER KNOWLEDGE}}{\textbf{Languages}: \hskip -0.1em Python, Rust, C, C++, Java, Javascript, HTML, CSS, C\#, Bash \\
+							  \textbf{Software}: \hskip 0.6em Linux, Git, Mercurial, React, Flask, SqlAlchemy, SCons, Make, Postgres, Vi, Intellij}
+                  
+\noindent\makebox[6.5in]{\rule{6.5in}{0.4pt}}
+
+\section{\underline{EXPERIENCE}}
+
+\textbf{Kinto Care}, Boston, MA\hfill July 2016 \--- January 2017\\
+{\sl Full Stack Engineer}
+\begin{itemize} \itemsep -2pt
+\item Developed flagship cross-platform phone app using Javascript with React + Cordova
+\item Interacted with back-end API powered by Flask and Postgres (Python, REST)
+\item Contributed to key design decisions through service research and weekly sprint meetings (Agile)
+\item Assured new features meet QA and user acceptance guidelines through rigorous testing 
+\end{itemize}
+
+
+\textbf{Beechwood Software}, Boston, MA\hfill November 2015 \--- July 2016  \\
+                 {\sl Software Engineer Intern}\hfill January 2017 \--- Present
+                 \begin{itemize}  \itemsep -2pt
+                 \item Contributed C++ code to the open-source IoT (Internet of Things) Alljoyn framework in collaboration with the Allseen Alliance and Linux Foundation 
+                 \item Developed smoothing algorithms to calculate distance between bluetooth devices 
+                 \item Configured a cross-compiling environment to utilize the Alljoyn stack for the Raspberry Pi 
+                 \item Assembled and tested the final stack that was presented at CES in Las Vegas
+                \end{itemize}
+              	\textbf{Northeastern University, Boston, MA } \hfill August 2015 \--- July 2016 \\ 
+              	{\sl TA for Fundamentals of Computer Science I} \hfill January 2017 \--- Present
+              	\begin{itemize} \itemsep -2pt
+              	\item Tutoring students and leading labs teaching Racket as a first Programming Language
+              	\item Grading homework, quizzes, and exams
+              	\end{itemize}
+                \textbf{Contributed software patches to various Open-Source projects}
+                  \begin{itemize}  \itemsep -7pt
+                  \item Mackup - Python project to sync application settings for Linux/OSX \hfill July \--- December 2014
+                   		\begin{itemize} \itemsep 5pt \parskip -7pt
+                   		\item Added auto configuration generation and app toggle without reloading configuration files
+                   		\item Increased test coverage to over 90\% for 5+ modules
+                   		\end{itemize} 
+                  \end{itemize}
+\noindent\makebox[6.5in]{\rule{6.5in}{0.4pt}}
+\section{\underline{PROJECTS}}
+				\textbf{Way-Cooler (Wayland Window Manager)} \hfill January 2016 \--- Present
+				\begin{itemize}  \itemsep -2pt
+				\item Designing a window manager utilizing the Wayland protocol in Rust
+				\item Inventing an extremely flexible and configurable layout system based off of i3 and awesome
+				\item Programmable interface to virtually everything via a running Lua thread or D-Bus interface
+				\end{itemize}
+
+                \textbf{Hacking Huskies Pavlock Android App} \hfill            May 16\textsuperscript{th} 2015\\
+                {\sl Pavlok Hackathon, Boston, Massachusetts}
+                 \begin{itemize}  \itemsep -2pt
+                 \item Team-designed Android app (Java) to shock user when blacklisted phone apps were over-utilized
+                 \item 3rd place winner of the Pavlok Hackathon
+                 \end{itemize} 
+
+                  \textbf{AutoWikiaBot} \hfill            June \--- August 2015
+                  \begin{itemize}  \itemsep -2pt
+                  \item Developed a Reddit bot in Python to post summaries of Wikia articles that other users linked
+                  \item Configured and managed a server running Linux/Debian hosting the bot remotely using SSH
+                  \item Adapted a popular Python Wikipedia library to work for Wikia links
+                  \end{itemize}
+
+\noindent\makebox[6.5in]{\rule{6.5in}{0.4pt}}
+
+\section{INTERESTS} Reading philosophy, playing tennis, collecting tea, playing rogue-likes
+
+\end{resume}
+\end{document}
+
+
+%\moveleft.5\hoffset\centerline{}
