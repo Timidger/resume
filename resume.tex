@@ -1,4 +1,3 @@
-% LaTeX resume using res.cls
 \documentclass[overlapped,line]{res}
 \topmargin=-.74in
 \oddsidemargin -.5in
@@ -16,96 +15,92 @@
 
 \begin{document}
 
-
-% Center the name over the entire width of resume:
 \moveleft.5\hoffset\centerline{\huge\bf Preston Carpenter}
+\vspace{.2em}
 
-
-\moveleft.5\hoffset\centerline{360 Huntington Ave, Boston, MA 02115 \textbullet \space (417) 438-7110 \textbullet \space carpenter.pr@husky.neu.edu}
-\moveleft.5\hoffset\centerline{ https://www.linkedin.com/in/timidger \textbullet \space https://github.com/Timidger \textbullet \space https://timidger.github.io }
-\moveleft.5\hoffset\centerline{Available: \textbf{July-December 2018}}
+\moveleft.5\hoffset\centerline{apragmaticplace@gmail.com $|$ 417-438-7110}
+\moveleft.5\hoffset\centerline{(linkedin.com/in/timidger $|$ github.com/Timidger $|$ timidger.github.io }
+\vspace{1em}
 
 \begin{resume}
 
-\section{\underline{EDUCATION}}  \textbf{Northeastern University}, Boston, MA \hfill September 2014 \--- Present \\
-                {\sl Candidate for a Bachelor of Science in Computer Science} \hfill Expected graduation May 2019 \\
-                College of Computer and Information Sciences \\
-                %Credentials: TA for Fundamentals of Computer Science 1, GPA: 2.9\\
-                % Change these relevant courses as you see fit
-                % Database Design, Algorithms and Data, Computer Systems, Object-Orientated Design, Theory of Computation, Networks ad Distributed Systems
-                Relevant Courses: \hskip 1em Object-Orientated Design, Computer Systems, Programming Languages, \\
-                \strut\hskip 9.25em Networks and Distributed Systems, Algorithms and Data \vspace{2mm} \\
+\section{\underline{EDUCATION}} 
+ \textbf{Northeastern University} $|$ Boston, MA \hfill September 2014 \--- Present \\
+{\sl Candidate for a Bachelor of Science in Computer Science} \hfill Expected graduation May 2019 \\
+College of Computer and Information Sciences \\
+Relevant Courses: \hskip 1em Object-Orientated Design, Computer Systems, Programming Languages, \\
+\strut\hskip 9.25em Networks and Distributed Systems, Algorithms and Data, Systems Security \vspace{2mm} \\
 \noindent\makebox[7.15in]{\rule{7.15in}{0.4pt}}
 
-\section {\underline{COMPUTER KNOWLEDGE}}{\textbf{Languages}: \hskip -0.1em Python, Rust, C, C++, Java, Javascript, HTML, CSS, C\#, Bash \\
-							  \textbf{Software}: \hskip 0.6em Linux, AWS, Git, Mercurial, React, Flask, SqlAlchemy, SCons, Make, Postgres, Vi, Intellij
-							  \vspace{-.7em}
-							  }
+\section {\underline{COMPUTER KNOWLEDGE}}
+{\textbf{Languages}: \hskip 1.4em Python, Rust, C, C++, Java, C\#, Javascript, HTML, CSS, Bash \\
+\textbf{Technologies}: \hskip 0.3em Linux, Wayland, Git, Meson, Bazel, Flask, Postgres, Vi, Emacs
+\vspace{-.7em}
+}
 
 \noindent\makebox[7.15in]{\rule{7.15in}{0.4pt}}
 
 \section{\underline{EXPERIENCE}}
 
-\textbf{Microsoft}, Redmond, WA\hfill May 2018 \--- July 2018\\
+\textbf{Google} $|$ Montreal, QC\hfill August 2018 - November 2018\\
+{\sl Software Developer Intern}
+\begin{itemize}
+	\item Implemented removing unwanted, force-installed extensions in the Chrome Cleanup Tool, a program that secures millions of Chrome installs on Windows computers silently every week
+	\item Expanded reporting metrics and updated privacy policy to facilitate unwanted extension fingerprinting
+\end{itemize}
+
+\textbf{Microsoft} $|$ Redmond, WA\hfill May 2018 \--- July 2018\\
 {\sl Software Engineer Intern}
 \begin{itemize} \itemsep -2pt
-\item Developed a document analyzer and reporting tool
-\item Collaborated with other teams to standardize OEM and datacenter documents for automation
-\item Made the configuration program for a boot loader used in datacenters more user friendly
+	\item Developed a SKU document analyzer and reporting tool for Azure's hardware engineers
+	\item Collaborated with other teams to standardize external OEM and internal datacenter documents for automation
+	\item Streamlined the configuration program for a boot loader used in datacenters to be more user friendly
 \end{itemize}
 
-\textbf{Intuit}, San Diego, CA\hfill July 2017 \--- December 2017\\
+\textbf{Intuit} $|$ San Diego, CA\hfill July 2017 \--- December 2017\\
 {\sl Software Engineer Co-op}
 \begin{itemize} \itemsep -2pt
-\item Backend developer on ``machine learning as a service'' product that powers data insights
-\item Eliminating manual deployment and testing through automated continuous integration
-\item Core developer on winning team in Codechella hackathon
+	\item Backend developer on ``machine learning as a service'' product that powers Mint and Intuit Turbo data insights
+	\item Eliminated manual deployment and testing by setting up automated continuous integration and deployment
+	\item Won the internal ``Codechella'' hackathon by extending the intranet website to include skills and project search
 \end{itemize}
 
-\textbf{Kinto Care}, Boston, MA\hfill July 2016 \--- January 2017\\
+\textbf{Kinto Care} $|$ Boston, MA\hfill July 2016 \--- January 2017\\
 {\sl Full Stack Engineer Co-op}
 \begin{itemize} \itemsep -2pt
-\item Developed flagship cross-platform phone app using Javascript with React + Cordova
-\item Interacted with back-end API powered by Flask and Postgres (Python, REST)
-\item Contributed to key design decisions through service research and weekly sprint meetings (Agile)
-\item Assured new features met QA and user acceptance guidelines through rigorous testing
+	\item Developed flagship cross-platform phone app using Javascript with React and Cordova
+	\item Integrated and expanded back-end API powered by Flask and Postgres
+	\item Contributed to key design decisions through service research and weekly sprint meetings (Agile)
 \end{itemize}
 
-
-\textbf{Beechwood Software}, Boston, MA \hfill January 2017 \--- July 2017\\
-                 {\sl Software Engineer Intern} \hfill November 2015 \--- July 2016
-                 \begin{itemize}  \itemsep -2pt
-                 \item Contributed C++ code to the open-source IoT (Internet of Things) Alljoyn framework in collaboration with the Allseen Alliance and Linux Foundation
-                 \item Developed smoothing algorithms to calculate distance between bluetooth devices
-                 \item Configured a cross-compiling environment to utilize the Alljoyn stack for the Raspberry Pi
-                 \item Assembled and tested the final stack that was presented at CES in Las Vegas
-                \end{itemize}
-\textbf{Northeastern University, Boston, MA } \hfill August 2015 \--- July 2016 \\
-              	{\sl TA for Fundamentals of Computer Science I} \hfill January 2017 \--- May 2017
-              	\begin{itemize} \itemsep -2pt
-              	\item  Tutoring students and leading labs teaching Racket as a first Programming Language
-              	\item Grading homework, quizzes, and exams  \vspace{-1em}
-              	\end{itemize}
+\textbf{Beechwood Software} $|$ Boston, MA \hfill January 2017 \--- July 2017\\
+{\sl Software Engineer Intern} \hfill November 2015 \--- July 2016
+\begin{itemize}  \itemsep -2pt
+	\item Contributed C++ code to the open-source IoT (Internet of Things) Alljoyn framework in collaboration with the Allseen Alliance and Linux Foundation
+	\item Developed smoothing algorithms to calculate distance between a wide range of different quality bluetooth devices
+	\item Assembled and tested the prototype presented at CES in Las Vegas using Rasberry Pis and Nest thermostats
+\end{itemize}
 \noindent\makebox[7.15in]{\rule{7.15in}{0.4pt}}
+
+
 \section{\underline{PROJECTS}}
-\textbf{Way-Cooler (Wayland Window Manager)} \hfill January 2016 \--- Present
-				\begin{itemize}  \itemsep -2pt
-				\item 2nd most popular tiling Wayland window manager with 2,000+ downloads and 1,000+ stars on Github
-				\item Designing a window manager utilizing the Wayland protocol in Rust
-				\item Inventing an extremely flexible and configurable layout system based off of i3 and awesome
-				\item Programmable interface to virtually everything via a running Lua thread and D-Bus interface
-				\end{itemize}
+\textbf{Way Cooler (Wayland Window Manager)} \hfill January 2016 \--- Present
+\begin{itemize}  \itemsep -2pt
+	\item 2nd most popular tiling Wayland window manager with 5,000+ downloads and 1,800+ stars on Github
+	\item Adapting the popular wlroots Wayland framework to be memory safe using Rust
+	\item Programmable interface to virtually everything from embedded Lua and D-Bus interface
+\end{itemize}
 
-\textbf{AutoWikiaBot} \hfill            June \--- August 2015
-                  \begin{itemize}  \itemsep -2pt
-                  \item Developed a Reddit bot in Python to post summaries of Wikia articles that other users linked
-                  \item Configured and managed a server running Linux/Debian hosting the bot remotely using SSH
-                  \item Adapted a popular Python Wikipedia library to work for Wikia links
-                  \end{itemize}
+\textbf{AutoWikiaBot (Reddit bot)} \hfill            June \--- August 2015
+\begin{itemize}  \itemsep -2pt
+	\item Developed a Reddit bot in Python to post summaries of Wikia articles that other users linked
+	\item Configured and managed a server running Linux/Debian hosting the bot remotely using SSH
+	\item Adapted a popular Python Wikipedia library to work for Wikia links
+\end{itemize}
 
 \noindent\makebox[7.15in]{\rule{7.15in}{0.4pt}}
 
-\section{INTERESTS} \moveleft.5\hoffset\centerline{Reading philosophy, playing tennis, collecting tea, playing rogue-likes}
+\section{INTERESTS} \moveleft.5\hoffset\centerline{Contributing to OSS, collecting tea, playing rogue-likes}
 
 \end{resume}
 \end{document}
