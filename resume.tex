@@ -32,8 +32,9 @@ Relevant Courses: \hskip 1em Compilers, Computer Systems, Programming Languages,
 \noindent\makebox[7.15in]{\rule{7.15in}{0.4pt}}
 
 \section {\underline{COMPUTER KNOWLEDGE}}
-{\textbf{Languages}: \hskip 1.4em Python, Rust, C, C++, Go, Java, Javascript, HTML, CSS, Bash\\
-\textbf{Technologies}: \hskip 0.3em Linux, Wayland, Git, Meson, Bazel, Flask, Postgres, Vi, Emacs
+{\textbf{Languages}: \hskip 1.4em Rust, C, C++, Python, Go, Javascript, HTML, CSS, Bash\\
+\textbf{Technologies}: \hskip 0.3em tokio, Linux, Wayland, Git, Meson, Bazel,
+Protobuf, gRPC, Emacs
 \vspace{-.7em}
 }
 
@@ -41,17 +42,21 @@ Relevant Courses: \hskip 1em Compilers, Computer Systems, Programming Languages,
 
 \section{\underline{EXPERIENCE}}
 
-\textbf{Starry} $|$ Boston, MA\hfill May 2019 - Present\\
+\textbf{Starry} $|$ Boston, MA\hfill February 2019 - Present\\
 {\sl System Software Engineer}
-\begin{itemize}
+\begin{itemize} \itemsep -2pt
 	\item Writing Rust and C++ firmware for embedded devices that power Starry internet
+    \item Using latest Rust libraries - Tokio, Futures, Failure, Serde, and proc-macro
+    \item Mentoring C++ programmers as we transition to most of our code to Rust
 \end{itemize}
 
 \textbf{Google} $|$ Montreal, QC\hfill August 2018 - November 2018\\
 {\sl Software Developer Intern}
-\begin{itemize}
+\begin{itemize} \itemsep -2pt
 	\item Implemented removing unwanted, force-installed extensions in the Chrome Cleanup Tool, a program that secures millions of Chrome installs on Windows computers silently every week
-	\item Expanded reporting metrics and updated privacy policy to facilitate unwanted extension fingerprinting
+    \item Collaborated with other engineers at a Chrome security conference and
+      offered my knowledge of Rust to discussions
+    \item Expanded reporting metrics and updated privacy policy to facilitate unwanted extension fingerprinting
 \end{itemize}
 
 \textbf{Microsoft} $|$ Redmond, WA\hfill May 2018 \--- July 2018\\
@@ -74,8 +79,9 @@ Relevant Courses: \hskip 1em Compilers, Computer Systems, Programming Languages,
 {\sl Full Stack Engineer Co-op}
 \begin{itemize} \itemsep -2pt
 	\item Developed flagship cross-platform phone app using Javascript with React and Cordova
-	\item Integrated and expanded back-end API powered by Flask and Postgres
-	\item Contributed to key design decisions through service research and weekly sprint meetings (Agile)
+	%\item Integrated and expanded back-end API powered by Flask and Postgres
+	%\item Contributed to key design decisions through service research and
+    %  weekly Agile sprint meetings
 \end{itemize}
 
 \textbf{Beechwood Software} $|$ Boston, MA \hfill January 2017 \--- July 2017\\
@@ -91,17 +97,27 @@ Relevant Courses: \hskip 1em Compilers, Computer Systems, Programming Languages,
 \section{\underline{PROJECTS}}
 \textbf{Way Cooler (Wayland Window Manager)} \hfill January 2016 \--- May 2019
 \begin{itemize}  \itemsep -2pt
-	\item 2nd most popular tiling Wayland window manager with 5,000+ downloads and 1,900+ stars on Github
-	\item Pragmatically utilizing C for the compositor and Rust for the client
-	\item Implementing a programmable interface using embedded Lua
+	\item 2nd most popular tiling Wayland window manager with 6,000+ downloads and 2,000+ stars on Github
+	\item Pragmatically separating compositing and Lua API into separate
+      processes for performance and stability
+	\item Implementing a programmable interface using embedded Lua to extend
+      a basic Wayland compositor
+\end{itemize}
+\textbf{wlc-rs, wlroots-rs (Safe Rust bindings to C Wayland libraries)} \hfill October 2017 \--- April 2019
+\begin{itemize} \itemsep -2pt
+  \item Designed and implemented a safe interface to wlc and wlroots (its successor)
+  \item Programmed basic proof-of-concept compositors in 100\% safe Rust,
+    including old versions of Way Cooler.
+    \item Thoroughly explored the design space for designing an ergonomic \&
+      safe API around a complicated C library.
 \end{itemize}
 
-\textbf{AutoWikiaBot (Reddit bot)} \hfill            June \--- August 2015
-\begin{itemize}  \itemsep -2pt
-	\item Developed a Reddit bot in Python to post summaries of Wikia articles that other users linked
-	\item Configured and managed a server running Linux/Debian hosting the bot remotely using SSH
-	\item Adapted a popular Python Wikipedia library to work for Wikia links
-\end{itemize}
+%\textbf{AutoWikiaBot (Reddit bot)} \hfill            June \--- August 2015
+%\begin{itemize}  \itemsep -2pt
+%       \item Developed a Reddit bot in Python to post summaries of Wikia articles that other users linked
+%       \item Configured and managed a server running Linux/Debian hosting the bot remotely using SSH
+%       \item Adapted a popular Python Wikipedia library to work for Wikia links
+%\end{itemize}
 
 \end{resume}
 \end{document}
