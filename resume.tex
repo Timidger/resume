@@ -30,118 +30,93 @@ https://github.com/Timidger $|$ https://timidger.github.io }
 \textbf{Stripe} $|$ Seattle, WA\hfill June 2025 - Present\\
 {\sl Senior Software Engineer}
 \begin{itemize} \itemsep -2pt
-	\item Led a company-wide reduction and cleanup of production IAM roles, leveraging AI 
-		to complete the effort in 2 months with zero user impact.
-	\item Replaced Terraform-based AWS resource deployments with a Go-based, 
-		Kubernetes-inspired orphan cleanup system, improving control and 
-		reliability of resource lifecycle management.
+	\item Led a company-wide reduction and cleanup of production
+		IAM roles, using an AI-driven pipeline to analyze and safely 
+		remove thousands of roles in 4 months with zero user impact.
+	\item Created an agentic workflow that analyzed code to classify IAM
+		roles, applied classification-specific prompts to determine required
+		permissions, and autonomously created pull requests with the
+		resulting code changes.
+	\item Designed a deterministic validation gate for AI-generated changes,
+		replacing unreliable LLM self-review with programmatic checks
+		that hard-stopped invalid changes.
+	\item Added orphaned resource cleanup to a reconciliation
+		system designed to replace all terraform IaaC across the
+		company; eliminating hundreds
+		of hours of toil cleaning up unused resources from drifted
+		terraform stacks.
+	%\item Unblocked a project to split out deployment targets, which required deploying multiple 15 gigabyte
+	%	container images, by designing and implementing a dynamic image
+	%	pulling daemon using containerd and Go to stream images onto
+	%	shared hosts.
+	\item Migrating a legacy Airflow execution layer from dedicated hosts to dynamic 
+		pod workers in Kubernetes to reduce infra costs by multiple \$MM.
 \end{itemize}
 
 \textbf{Amazon Web Services (AWS)} $|$ Seattle, WA\hfill April 2020 - June 2025\\
 {\sl Software Engineer II}
 \begin{itemize} \itemsep -2pt
-	\item Led the migration of the global Amazon Linux
-		operating system (OS) release process to Step Functions and Cloud Development Kit
-		(CDK) achieving a 94\% speedup from 4 days to 6 hours.
-	\item Centralized OS release operations into a
-		Python CLI, replacing an ad-hoc AWS web-console workflow.
-		Engineers now use this tool instead of relying on tribal knowledge
-		and outdated runbooks to release Amazon Linux.
-	\item In charge of multiple operating system releases with strict
-		deadlines and need-to-know information. Successfully released
-		Amazon Linux (AL1, AL2, AL2023, and internal
-		versions) in every AWS region and partition (Commercial, China,
-		US-Government).
-	\item Patched CVEs in critical software packages from upstream and other
-		distributions. Was part of the chain of trust for embargo'd
-		security patches to critical software packages (e.g.
-		Linux kernel, \texttt{sudo}, \texttt{log4j}).
-	\item Mentored fellow engineers, fostering their learning \& growth.
-		Managed an intern who converted to full-time, and a junior
-		engineer who transitioned to a more technical role.
-		Mentored other junior engineers, including an engineer that
-		switched to a more technical role under my guidance.
-	\item Automated manual tasks in a distributed
-		system for all AWS regions/partitions with
-		Rust, Python, and Bash.
-	% ADC?
-	% 
+	\item Led the redesign of Amazon Linux's global release system,
+		migrating a 4-day, console-driven process to AWS Step functions
+		and CDK, reducing release time to 6 hours (94\%).
+	\item Built a Python CLI that codified the Amazon Linux release process,
+		replacing an ad-hoc console workflow and tribal knowledge with a
+		repeatable, self-service engineering tool.
+	\item Owned production releases across all AWS regions and partitions,
+		coordinating releases of AL1, AL2, AL2023, and internal variants
+		under strict deadlines.
+	\item Maintained the security of globally distributed Amazon Linux
+		releases, patching critical CVEs and participating in the chain of trust for embargoed
+		security releases including the Linux kernel, \texttt{sudo}, and \texttt{log4j}.
+	\item Automated operational workflows across AWS partitions using Rust, Python, and Bash.
+	\item Mentored engineers across the team, including managing an intern
+		who converted to full-time and mentoring a junior engineer into
+		a more technical role.
+	% focus on parallel
 \end{itemize}
 
 \textbf{Starry} $|$ Boston, MA\hfill February 2019 - April 2020\\
 {\sl System Software Engineer}
 \begin{itemize} \itemsep -2pt
     \item Implemented backbone fiber network fail-over with Python and networkd.
-    \item Designed and produced SSH-based remote device support system for
+    \item Designed and implemented SSH-based remote device support system for
 	    technicians, using Rust and gRPC.
     \item Wrote Rust and C++ firmware for embedded devices that power Starry
 	    internet.
 \end{itemize}
 
-\textbf{Google} $|$ Montreal, QC\hfill August 2018 - November 2018\\
-{\sl Software Developer Intern}
-\begin{itemize} \itemsep -2pt
-    \item Implemented a system to detect and remove malignant extensions in the Chrome Cleanup
-		Tool in C++.%, a program that secures millions of Chrome installs on Windows computers silently every week
-    %\item Expanded reporting metrics and updated privacy policy to facilitate
-    %unwanted extension fingerprinting.
-\end{itemize}
-
-\textbf{Microsoft} $|$ Redmond, WA\hfill May 2018 \--- July 2018\\
-{\sl Software Engineer Intern}
-\begin{itemize} \itemsep -2pt
-	\item Developed a SKU document analyzer and reporting tool for Azure's
-		hardware engineers in C\# and HTML.
-	%\item Collaborated with other teams to standardize external OEM and
-	%	internal datacenter documents for automation.
-	%\item Streamlined the configuration program for a boot loader used in
-	%	datacenters to be more user friendly.
-\end{itemize}
-
-\textbf{Intuit} $|$ San Diego, CA\hfill July 2017 \--- December 2017\\
-{\sl Software Engineer Co-op}
-\begin{itemize} \itemsep -2pt
-	\item Java backend developer on ``machine learning as a service''
-		product that powers Mint and Turbo data insights.
-	\item Eliminated manual deployment/testing by setting up automated
-      continuous integration and deployment in AWS.
-	%\item Won the internal ``Codechella'' hackathon by extending the
-	%	intranet website to include skills and project search.
-\end{itemize}
-
-\textbf{Kinto Care} $|$ Boston, MA\hfill July 2016 \--- January 2017\\
-{\sl Full Stack Engineer Co-op}
-\begin{itemize} \itemsep -2pt
-	%\item Developed flagship cross-platform phone app using Javascript with React and Cordova.
-	\item Expanded back-end API powered by Flask and
-		Postgres.
-	%\item Contributed to key design decisions through service research and
-    %  weekly Agile sprint meetings
-\end{itemize}
-
-%\textbf{Beechwood Software} $|$ Boston, MA \hfill January 2017 \--- July 2017\\
-%{\sl Software Engineer Intern} \hfill November 2015 \--- July 2016
-%\begin{itemize}  \itemsep -2pt
-	%\item Contributed C++ to open-source Alljoyn framework in collaboration with Allseen Alliance and Linux Foundation.
-	%\item Devised smoothing algorithms to calculate distance between a wide range of different quality bluetooth devices
-	%\item Assembled and tested the prototype presented at CES in Las Vegas using Rasberry Pis and Nest thermostats.
-%\end{itemize}
-\vspace{-1em}
+\textbf{Google} $|$ {\sl Software Developer Intern} $|$ Montreal, QC\hfill August 2018 - November 2018
+\vspace{.5em}\\
+\textbf{Microsoft} $|$ {\sl Software Engineer Intern} $|$ Redmond, WA\hfill May 2018 \--- July 2018
+\vspace{.5em}\\
+\textbf{Intuit} $|$ {\sl Software Engineer Co-op} $|$ San Diego, CA\hfill July 2017 \--- December 2017
+\vspace{.5em}\\
+\textbf{Kinto Care} $|$ {\sl Full Stack Engineer Co-op} $|$ Boston, MA\hfill July 2016 \--- January 2017
+\vspace{.5em}\\
+\textbf{Beechwood Software} $|$ {\sl Software Engineer Intern} $|$ Boston, MA \hfill January 2015 \--- July 2016
+%\vspace{-1em}
 \noindent\makebox[7.15in]{\rule{7.15in}{0.4pt}}
 
-\section{\underline{PROJECTS}}
-\textbf{Way Cooler (Wayland Window Manager)}
+\section{\underline{SIDE PROJECTS}}
+\textbf{Fuel Crisis (2026 GMTK Game Jam Entry)} \hfill July 2026
+\begin{itemize}  \itemsep -2pt
+	\item Designed, programmed, and animated a complete 3D puzzle game in Godot and 
+		Blender for the GMTK Game Jam; ranked in the top 20\% of 10,000+ entries
+\end{itemize}
+\vspace{-.7em}
+\textbf{Way Cooler (Wayland Window Manager)} \hfill July 2016 \--- January 2020
 \begin{itemize}  \itemsep -2pt
 	\item Independently created tiling Wayland window manager with 6,000+
-		downloads and 2,000+ stars on Github.
+		downloads and 2,000+ stars on GitHub.
 	\item Designed a programmable interface using Lua that extends
       a basic compositor core in Rust.
 \end{itemize}
 
 \section {\underline{COMPUTER KNOWLEDGE}}
-{\textbf{Languages}: \hskip 1.4em Python, Rust, Go, Java, Javascript, Typescript, C, C++, Bash, Lua \\
-\textbf{Technologies}: \hskip 0.3em AWS, CDK, gRPC, Protobuf, NGINX, systemd, Git, 
-Wayland, Docker, Flask, Postgres
+{\textbf{Languages}: \hskip 5.0em Python, Rust, Go, Java, Javascript, Typescript, C, C++, Bash, Lua \\
+\textbf{Cloud \& Infra}: \hskip 3.0em AWS, CDK, Kubernetes, Docker, systemd\\
+\textbf{Distributed Systems}: Step Functions, gRPC, Airflow\\
+\textbf{Databases \& Web}: \hskip 1.3em PostgreSQL, Flask, NGINX
 \vspace{-.7em}
 }
 
